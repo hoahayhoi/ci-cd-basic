@@ -25,6 +25,7 @@ app.use(cors());
 // }
 // cors(corsOptions);
 
-app.listen(port, () => {
+app.listen(port, () => 
+  {
   console.log(`App listening on port ${port}`);
 });
