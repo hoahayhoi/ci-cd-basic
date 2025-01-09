@@ -40,12 +40,12 @@ jobs:
 
       # Bước 5: Chạy ESLint
       - name: Run ESLint
-        run: eslint "**/*.js"
+        run: npm run lint:fix
         continue-on-error: false
 
       # Bước 6: Kiểm tra Prettier
       - name: Check Prettier
-        run: prettier --check "**/*.js"
+        run: npm run prettier:fix
         continue-on-error: false
 
       # Bước 7: Chạy tests
