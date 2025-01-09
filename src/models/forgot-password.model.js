@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const forgotPasswordSchema = new mongoose.Schema(
   {
@@ -6,17 +6,17 @@ const forgotPasswordSchema = new mongoose.Schema(
     otp: String,
     expireAt: {
       type: Date,
-      expires: 0
-    }
+      expires: 0,
+    },
   },
   {
     timestamps: true,
   }
 );
 const ForgotPassword = mongoose.model(
-  "ForgotPassword",
+  'ForgotPassword',
   forgotPasswordSchema,
-  "forgot-password"
+  'forgot-password'
 );
 
 module.exports = ForgotPassword;

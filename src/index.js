@@ -1,14 +1,14 @@
-const express = require("express");
+const express = require('express');
 require('dotenv').config();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 const port = 3000;
 
-const databse = require("./config/database");
+const databse = require('./config/database');
 databse.connect();
 
-const routeClient = require("./routes/client/index.route");
+const routeClient = require('./routes/client/index.route');
 
 // parse application/json
 app.use(bodyParser.json());
@@ -25,7 +25,6 @@ app.use(cors());
 // }
 // cors(corsOptions);
 
-app.listen(port, () => 
-  {
+app.listen(port, () => {
   console.log(`App listening on port ${port}`);
 });
