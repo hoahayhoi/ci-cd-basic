@@ -1,11 +1,18 @@
 {
-   "globals": {
+  "globals": {
     "process": true
   },
   "extends": [
     "eslint:recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended"  // Thêm Jest vào phần extends
   ],
+  "plugins": [
+    "jest"  // Thêm plugin jest
+  ],
+  "env": {
+    "jest": true  // Đảm bảo môi trường Jest được hỗ trợ
+  },
   "rules": {
     "quotes": ["error", "single"], // Đặt quy tắc cho dấu nháy đơn
     "prettier/prettier": ["error", { "singleQuote": true }] // Đảm bảo Prettier sử dụng nháy đơn

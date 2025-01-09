@@ -7,7 +7,7 @@
     "start": "nodemon --inspect index.js",
     "test": "jest",
     "prepare": "husky install",
-    "lint:fix": "eslint --fix .",
+    "lint:fix": "eslint --fix src/",
     "prettier": "prettier --check \"src/**/(*.jsx|*.js|*.css|*.scss)\"",
     "prettier:fix": "prettier --write \"src/**/(*.jsx|*.js|*.css|*.scss)\""
   },
@@ -25,6 +25,7 @@
   "devDependencies": {
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^28.10.0",
     "eslint-plugin-prettier": "^5.2.1",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
